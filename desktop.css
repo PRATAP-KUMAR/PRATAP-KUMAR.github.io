@@ -86,7 +86,6 @@
     transform: rotate(16deg);
   }
 
-
   .project-tags ul {
     margin: 0;
   }
@@ -161,9 +160,9 @@
     padding: 0;
   }
 
-  .row-2>img,
-  .row-3>img,
-  .row-4>img {
+  .row-2 > img,
+  .row-3 > img,
+  .row-4 > img {
     height: 48px;
     width: 48px;
   }
