@@ -9,7 +9,7 @@ Adding "Contact me" section to the "My Portfolio" project.
 
 ## Getting Started
 
-This is about "Adding the Middle Section" to the My Portfolio project.
+Link to my portfolio: [PRATAP PANABAKA](https://pratap-kumar.github.io/)
 
 ## Authors
 

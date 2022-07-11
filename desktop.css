@@ -60,6 +60,10 @@
     width: auto;
   }
 
+  .image-dtv:hover {
+    transform: scale(1.2);
+  }
+
   .image-mv {
     display: none;
   }
@@ -75,6 +79,11 @@
     padding: 24px;
     padding-top: 0;
     gap: 24px;
+  }
+
+  .tags:hover {
+    transition: transform 0.5s;
+    transform: rotate(16deg);
   }
 
   .project-tags ul {
