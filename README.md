@@ -58,4 +58,10 @@ All the above tests passed.
 ### Moving Content and Multimedia
 - N/A
 
+### The basic structure of the page
+Check done on the following:
 
+- Disabled Images, Disabled All Images
+- Disabled Styles, Disabled All Styles
+- Linearize page
+- All the above tests passed
