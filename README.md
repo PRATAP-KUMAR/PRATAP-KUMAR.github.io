@@ -35,4 +35,8 @@ All the above tests passed.
 - Social icons Medium and angellist does not have alt text on line 193 - 197
 - Link to the line of code: https://github.com/PRATAP-KUMAR/PRATAP-KUMAR.github.io/blob/850441d1ad581ef285dfd758ca949cccaac6e763/index.html#L193-L197
 
+### Text Headings
+- found Hierachy issues
+- comments added in the pull request.
+
 
