@@ -313,14 +313,22 @@ hr {
   padding: 15px 38px 0 16px;
 }
 
-.project-button:hover button,
-.resume-button:hover  button {
+.project-button:hover button {
   color: #fff;
   background-color: #7f8cff;
 }
 
-.project-button:active button,
-.resume-button:hover  button {
+.project-button:active button {
+  color: #fff;
+  background-color: #3347ff;
+}
+
+.resume-button:hover button {
+  color: #fff;
+  background-color: #7f8cff;
+}
+
+.resume-button:active button {
   color: #fff;
   background-color: #3347ff;
 }

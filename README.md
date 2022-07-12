@@ -44,4 +44,8 @@ All the above tests passed.
 - Dark texts in on light background.
 - Passed the test
 
+### Resize
+- Used firefox for testing purpose with 100% to 200% text Zoom.
+- the text did not overlap and was not cut off.
+
 
