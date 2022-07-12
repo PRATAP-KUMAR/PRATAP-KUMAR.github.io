@@ -27,3 +27,7 @@ PRATAP
 - read by screen readers
 
 All the above tests passed.
+
+### Image text alternatives
+- Social icons medium and angellist does not have alt text on line 44 and 47
+- Link to the line of code: https://github.com/PRATAP-KUMAR/PRATAP-KUMAR.github.io/blob/850441d1ad581ef285dfd758ca949cccaac6e763/index.html#L44-L47
