@@ -39,4 +39,9 @@ All the above tests passed.
 - found Hierachy issues
 - comments added in the pull request.
 
+### Color Contrast
+- Used grayscale tool to test for color contrast and found no issues.
+- Dark texts in on light background.
+- Passed the test
+
 
