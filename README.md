@@ -48,4 +48,11 @@ All the above tests passed.
 - Used firefox for testing purpose with 100% to 200% text Zoom.
 - the text did not overlap and was not cut off.
 
+### Interaction
+- Tab all works
+- Tab away also works
+- Tab order is clear
+- All funtionalities can be done by keyboard
+- All tests passed
+
 
