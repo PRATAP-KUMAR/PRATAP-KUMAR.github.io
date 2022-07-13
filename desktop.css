@@ -16,7 +16,8 @@
   }
 
   .nav li a {
-    color: #6070ff;
+    /* color: #6070ff; */
+    color: #344563;
     font-weight: bold;
     text-decoration: none;
   }

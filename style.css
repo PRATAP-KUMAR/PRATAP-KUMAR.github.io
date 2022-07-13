@@ -29,7 +29,8 @@ ul {
 }
 
 #logo {
-  color: #6070ff;
+  /* color: #6070ff; */
+  color: #434eb1;
   font-size: 18px;
 }
 
@@ -125,7 +126,8 @@ ul {
 .project-tech,
 .project-year {
   font-size: 16px;
-  color: #7a869a;
+  /* color: #7a869a; */
+  color: #515966;
 }
 
 .project-description {
