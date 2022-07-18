@@ -18,3 +18,6 @@ PRATAP
 - GitHub: [@PRATAP-KUMAR](https://github.com/PRATAP-KUMAR)
 - Twitter: [@PRATAP_TWT](https://twitter.com/PRATAP_TWT)
 - Linkedin: [@LinkedIn](https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/)
+
+## LICENSE
+- MIT License
