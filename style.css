@@ -28,7 +28,7 @@ ul {
   padding-left: 24px;
   padding-right: 24px;
   position: fixed;
-  width:  94%;
+  width: 94%;
 }
 
 #logo {
@@ -93,7 +93,6 @@ ul {
 
 .image-mv {
   display: block;
-  align-items: left;
 }
 
 .image-dtv {
@@ -372,7 +371,8 @@ hr {
   font-weight: 700;
   color: #fff;
   list-style-type: none;
-  background: #6070FF;
+  background: #6070ff;
+  opacity: 70%;
   mix-blend-mode: multiply;
 }
 
