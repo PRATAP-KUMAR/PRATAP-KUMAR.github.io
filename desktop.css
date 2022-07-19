@@ -6,6 +6,7 @@
 
   .mobile-visible {
     display: none;
+    cursor: pointer;
   }
 
   .desktop-visible {
