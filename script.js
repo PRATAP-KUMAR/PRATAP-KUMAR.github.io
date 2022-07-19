@@ -28,3 +28,8 @@ container.addEventListener('click', function (e) {
     toggleBurger();
     qs(target.getAttribute('href')).scrollIntoView();
 });
+
+window.onresize = () => {
+if (window.innerWidth >= 768 && container.classList.contains('enlarge')) {
+toggleBurger();
+}
