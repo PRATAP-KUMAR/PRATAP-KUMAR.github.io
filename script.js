@@ -33,3 +33,4 @@ window.onresize = () => {
 if (window.innerWidth >= 768 && container.classList.contains('enlarge')) {
 toggleBurger();
 }
+}
