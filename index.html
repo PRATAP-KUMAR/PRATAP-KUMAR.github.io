@@ -8,36 +8,44 @@
 	<title>PRATAP PANABAKA's Portfolio</title>
 	<link rel="stylesheet" href="style.css" />
 	<link rel="stylesheet" href="desktop.css" />
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap">
 </head>
 
 <body>
 	<header class="page-header">
 		<h1 id="logo">PRATAP PANABAKA</h1>
 		<nav class='nav'>
-			<img class="mobile-visible" src='images/hamburg.svg' alt="Click for the Menu Options">
+			<img id="hamburger" class="mobile-visible" src='images/hamburg.svg' alt="Click for the Menu Options">
+			<img id="close-icon" src="images/close.svg" alt="Closing image"
+				class="mobile-visible no-display close-icon">
 			<ul class="desktop-visible">
-				<li><a href="">Portfolio</a></li>
-				<li><a href="">About</a></li>
-				<li><a href="">Contact</a></li>
+				<li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+				<li><a href="#introduction-1" class="nav-link">About</a></li>
+				<li><a href="#contact" class="nav-link">Contact</a></li>
 			</ul>
 		</nav>
+
 	</header>
 
 	<main class="main-container">
 		<section class="section-1" id="introduction">
-			<h2>I’m PRATAP PANABAKA Glad to see you!</h2>
+			<h2>I’m PRATAP PANABAKA<br>Glad to see you!</h2>
 			<p>I’m a software developer! I can help you build a product, feature or website Look
 				through some of my work and experience! If you like what you see and have a project you need
 				coded, don’t hestiate to contact me.
 			</p>
 			<h3 class="connect">LET’S CONNECT</h3>
 			<ul class="social-media">
-				<li class="sm"><a href="https://twitter.com/PRATAP_TWT"><img src='images/twitter.svg' width='20' height='20' alt="Twitter Profile"></a></li>
-				<li class="sm"><a href="https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/"><img src='images/linkedin.svg' width='20' height='20' alt="LinkedIn Profile"></a></li>
+				<li class="sm"><a href="https://twitter.com/PRATAP_TWT"><img src='images/twitter.svg' width='20'
+							height='20' alt="Twitter Profile"></a></li>
+				<li class="sm"><a href="https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/"><img
+							src='images/linkedin.svg' width='20' height='20' alt="LinkedIn Profile"></a></li>
 				<li class="sm"><a href=""><img src='images/m.svg' width='20' height='20' alt="Medium Profile"></a></li>
-				<li class="sm"><a href="https://github.com/PRATAP-KUMAR"><img src='images/github.svg' width='20' height='20' alt="GitHub Profile"></a></li>
-				<li class="sm"><a href=""><img src='images/v.svg' width='20' height='20' alt="Angellist Profile"></a></li>
+				<li class="sm"><a href="https://github.com/PRATAP-KUMAR"><img src='images/github.svg' width='20'
+							height='20' alt="GitHub Profile"></a></li>
+				<li class="sm"><a href=""><img src='images/v.svg' width='20' height='20' alt="Angellist Profile"></a>
+				</li>
 			</ul>
 		</section>
 
@@ -177,11 +185,16 @@
 				<div class="sm-container">
 					<h3 class="connect">LET’S CONNECT</h3>
 					<ul class="social-media">
-						<li class="sm"><a href="https://github.com/PRATAP-KUMAR"><img src='images/github.svg' width='20' height='20' alt="GitHub Profile"></a></li>
-						<li class="sm"><a href="https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/"><img src='images/linkedin.svg' width='20' height='20' alt="LinkedIn Profile"></a></li>
-						<li class="sm"><a href=""><img src='images/v.svg' width='20' height='20' alt="Angellist Profile"></a></li>
-						<li class="sm"><a href="https://twitter.com/PRATAP_TWT"><img src='images/twitter.svg' width='20' height='20' alt="Twitter Profile"></a></li>
-						<li class="sm"><a href=""><img src='images/m.svg' width='20' height='20' alt='Medium Profile' ></a></li>
+						<li class="sm"><a href="https://github.com/PRATAP-KUMAR"><img src='images/github.svg' width='20'
+									height='20' alt="GitHub Profile"></a></li>
+						<li class="sm"><a href="https://www.linkedin.com/in/pratap-kumar-panabaka-755489236/"><img
+									src='images/linkedin.svg' width='20' height='20' alt="LinkedIn Profile"></a></li>
+						<li class="sm"><a href=""><img src='images/v.svg' width='20' height='20'
+									alt="Angellist Profile"></a></li>
+						<li class="sm"><a href="https://twitter.com/PRATAP_TWT"><img src='images/twitter.svg' width='20'
+									height='20' alt="Twitter Profile"></a></li>
+						<li class="sm"><a href=""><img src='images/m.svg' width='20' height='20'
+									alt='Medium Profile'></a></li>
 					</ul>
 					<div class="resume-button">
 						<button type="button">Get my resume</button>
@@ -222,7 +235,7 @@
 		</section>
 	</main>
 	<footer>
-		<section class="contact-me">
+		<section id="contact" class="contact-me">
 			<h1 class="contact-me-text">Contact me</h1>
 			<p class="contact-me-brief">If you have an application you are intrested in developing, a feature that
 				you need built or a project that needs coding.
@@ -244,4 +257,7 @@
 			</form>
 		</section>
 	</footer>
+	<script src="script.js"></script>
 </body>
+
+</html>
