@@ -1,10 +1,21 @@
-const qs = function querySelector(selector = '*', element = document) {
+const qs = function (selector = '*', element = document) {
   return element.querySelector(selector);
 };
+
+const qsa = function (selector='*', element = document) {
+	return [...element.querySelectorAll(selector)]
+}
 
 const hamburger = qs('#hamburger');
 const closeIcon = qs('#close-icon');
 const container = qs('nav.nav ul');
+const seeProjects = qsa('.see-project');
+
+for (let i=0, len=seeProjects.length; i<len; i += 1) {
+	seeProjects[i].addEventListener('click', ()=> {
+		qs("#popup").classList.add("popup");
+	})
+}
 
 const toggleBurger = function toggleBurger() {
   hamburger.classList.toggle('no-display');
@@ -35,35 +46,39 @@ window.onresize = () => {
   }
 };
 
-const projects = {
-	project-1 {
+const projects = [
+	{
+	id: project1,
 	name: 'Tonic',
 	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-	featuredImage: url("images/project1"),
+	featuredImage: "url('images/project1')",
 	technologies: ['html', 'css', 'javaScript'],
 	liveVersion: url("https://pratap-kumar.github.io/"),
 	source: url("https://github.com/PRATAP-KUMAR")
-	}
+	},
 	
-	project-2 {
+	{
+	id: project2,
 	name: 'Multi-Post Stories',
 	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 	featuredImage: url("images/project1"),
 	technologies: ['html', 'css', 'javaScript'],
 	liveVersion: url("https://pratap-kumar.github.io/"),
 	source: url("https://github.com/PRATAP-KUMAR")
-	}
+	},
 	
-	project-3 {
+	{
+	id: project3,
 	name: 'Facebook 360',
 	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 	featuredImage: url("images/project1"),
 	technologies: ['html', 'css', 'javaScript'],
 	liveVersion: url("https://pratap-kumar.github.io/"),
 	source: url("https://github.com/PRATAP-KUMAR")
-	}
+	},
 	
-	project-4 {
+	{
+	id: project4,
 	name: 'Uber Navigation',
 	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
 	featuredImage: url("images/project1"),
@@ -71,7 +86,7 @@ const projects = {
 	liveVersion: url("https://pratap-kumar.github.io/"),
 	source: url("https://github.com/PRATAP-KUMAR")
 	}
-}
+]
 	
 	
 	

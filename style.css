@@ -402,3 +402,17 @@ hr {
 .blur {
   filter: blur(8px);
 }
+
+#popup {
+  display: none;
+}
+
+.popup {
+  display: unset;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: white;
+}
