@@ -1,6 +1,6 @@
 # My Portfolio
 
-This is my Portfolio
+This is my Portfolio, In this branch we(pair programmers) are going to implement "a popup window that includes the project details in both deskoopt and mobile.w"
 
 ## Built With
 
