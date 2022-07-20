@@ -34,3 +34,45 @@ window.onresize = () => {
     toggleBurger();
   }
 };
+
+const projects = {
+	project-1 {
+	name: 'Tonic',
+	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+	featuredImage: url("images/project1"),
+	technologies: ['html', 'css', 'javaScript'],
+	liveVersion: url("https://pratap-kumar.github.io/"),
+	source: url("https://github.com/PRATAP-KUMAR")
+	}
+	
+	project-2 {
+	name: 'Multi-Post Stories',
+	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+	featuredImage: url("images/project1"),
+	technologies: ['html', 'css', 'javaScript'],
+	liveVersion: url("https://pratap-kumar.github.io/"),
+	source: url("https://github.com/PRATAP-KUMAR")
+	}
+	
+	project-3 {
+	name: 'Facebook 360',
+	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+	featuredImage: url("images/project1"),
+	technologies: ['html', 'css', 'javaScript'],
+	liveVersion: url("https://pratap-kumar.github.io/"),
+	source: url("https://github.com/PRATAP-KUMAR")
+	}
+	
+	project-4 {
+	name: 'Uber Navigation',
+	description: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+	featuredImage: url("images/project1"),
+	technologies: ['html', 'css', 'javaScript'],
+	liveVersion: url("https://pratap-kumar.github.io/"),
+	source: url("https://github.com/PRATAP-KUMAR")
+	}
+}
+	
+	
+	
+	
