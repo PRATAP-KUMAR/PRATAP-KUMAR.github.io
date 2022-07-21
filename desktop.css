@@ -61,7 +61,7 @@
   }
 
   .image-dtv:hover {
-    transform: scale(1.2);
+    transform: rotate(2deg);
   }
 
   .image-mv {

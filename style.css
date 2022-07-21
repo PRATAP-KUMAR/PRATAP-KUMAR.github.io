@@ -408,11 +408,99 @@ hr {
 }
 
 .popup {
-  display: unset;
   position: fixed;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background-color: white;
+  top: 5%;
+  left: 5%;
+  padding: 50px;
+  width: 80vw;
+  height: 80vh;
+  align-items: center;
+  background-color: aliceblue;
 }
+
+.close {
+ position: fixed;
+ cursor: pointer;
+ top: 20px;
+ right: 40px;
+}
+
+.article {
+  background-color: burlywood;
+  height: 80vh;
+}
+
+.job-tags {
+  display: flex;
+  justify-content: flex-start;
+  gap: 50px;
+}
+
+.image {
+  order: 0;
+  height: 33vh;
+  object-fit: contain;
+  size: 60%;
+  width: 100%;
+  border-radius: 0.6rem;
+}
+
+.three-color-box {
+  padding: 0;
+}
+
+.red {
+  background: #cc092f;
+}
+
+.green {
+  background: #09cc69;
+}
+
+.blue {
+  background: #0980cc;
+}
+
+.left {
+  display: inline-block;
+  width: 70%;
+}
+
+.right {
+  width: 30vw;
+  height: 50%;
+}
+
+.work .card {
+  position: relative;
+  outline: solid rgb(202, 202, 202) 2px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: outline 0.5s;
+}
+
+.work .card:hover {
+  outline: solid #008552 2px;
+}
+
+.work img {
+  height: 33vh;
+  width: 100%;
+  object-fit: cover;
+  transition: transform 0.4s linear;
+}
+
+.work .card img:hover {
+  transform: scale(1.1);
+  transition: transform 3s linear;
+}
+
+.work .card > div {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  margin-top: -1rem;
+  padding: 1rem 0;
+  border-radius: 8px;
+}
+
+
