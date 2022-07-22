@@ -25,7 +25,7 @@
   display: block;
 }
 
-.popup-div ul>li {
+.popup-div ul > li {
   font-size: 18px;
   color: #344563;
   list-style: none;
@@ -63,8 +63,8 @@
   display: flex;
   justify-content: space-between;
   height: 50%;
-  border-bottom: 5px solid #EBECF0;
-  column-gap: 50px;;
+  border-bottom: 5px solid #ebecf0;
+  column-gap: 50px;
 }
 
 .blue hr {

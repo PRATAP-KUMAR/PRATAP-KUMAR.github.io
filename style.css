@@ -29,7 +29,7 @@ ul {
   list-style-type: none;
 }
 
-ul>li {
+ul > li {
   padding-right: 20px;
   margin: 0;
 }
@@ -75,16 +75,15 @@ ul>li {
   padding: 24px;
 }
 
-#introduction h2 {
-  font-size: 40px;
-  color: #172b4d;
-}
-
 .div1 h2 {
   font-size: 40px;
   font-weight: 700;
   color: #091e42;
   padding-top: 36px;
+}
+
+.card-container > h2 {
+  padding: 0;
 }
 
 #introduction h2 {
@@ -119,7 +118,6 @@ ul>li {
   flex-direction: column;
   gap: 140px;
   padding: 0 24px;
-
 }
 
 .card-container {
@@ -133,18 +131,12 @@ ul>li {
   width: auto;
 }
 
-
-
-.card-container > h2 {
-  padding: 0;
-}
-
 .card-container ul {
   list-style-type: none;
   display: block;
 }
 
-.card-container  ul>li {
+.card-container ul > li {
   font-size: 18px;
   color: #344563;
   list-style: none;
@@ -335,7 +327,6 @@ hr {
   line-height: 24px;
   width: auto;
   height: 48px;
-  align-items: flex-start;
 }
 
 .write-message {
