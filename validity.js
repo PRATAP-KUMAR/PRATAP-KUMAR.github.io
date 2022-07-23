@@ -8,7 +8,7 @@ errSpan.style.color = 'red';
 errSpan.style.fontSize = '1rem';
 button.insertAdjacentElement('beforebegin', errSpan);
 
-let invalidMessage = '';
+const invalidMessage = '';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
