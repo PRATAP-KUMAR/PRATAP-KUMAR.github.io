@@ -1,4 +1,4 @@
-const form = document.querySeelector('#contact-form');
+const form = document.querySelector('#contact-form');
 const EMAIL_CASE_SENSITIVITY_CHECK = 'Please enter the letters in your email as lower case';
 
 form.addEventListener('submit', (event) => {
