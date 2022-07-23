@@ -1,11 +1,8 @@
 # My Portfolio
 
-<<<<<<< HEAD
-This is my Portfolio.
+This is my Portfolio.  
 In this branch, contact form validation is done by using javascript.
-=======
-This is my Portfolio,
->>>>>>> 34b5d56777aa7eaec574260460eb650271a490b3
+
 
 ## Built With
 
