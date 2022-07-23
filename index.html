@@ -192,9 +192,9 @@
         to help with it
       </p>
     </div>
-    <form class="contact-box" action="https://formspree.io/f/mzbolelw" method="POST">
+    <form id="contact-form" class="contact-box" action="https://formspree.io/f/mzbolelw" method="POST">
       <input type="text" name="full-name" placeholder="Your Name" id="contact-name" maxlength="30" required />
-      <input type="email" placeholder="username@email.com" name="email" id="email" required />
+      <input type="email" placeholder="username@email.com" name="email" id="email" required="required" />
       <textarea id="message" name="Message" maxlength="500" placeholder="Write your message here" required></textarea>
       <button type="submit" class="btn btn-width">Get In Touch</button>
     </form>
@@ -204,6 +204,7 @@
 	<script src="script.js"></script>
 	<script type="module" src="projects.js"></script>
 	<script type="module" src="popup.js"></script>
+	<script src="validation.js"></script>
 </body>
 
 </html>
