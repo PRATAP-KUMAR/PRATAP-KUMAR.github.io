@@ -12,7 +12,6 @@ button.insertAdjacentElement('beforebegin', errorMessage);
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-
   if (email.value !== email.toLocaleLowerCase()) {
     errorMessage.innerText = EMAIL_CASE_SENSITIVITY_CHECK;
   } else {
