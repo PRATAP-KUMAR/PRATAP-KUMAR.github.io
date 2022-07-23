@@ -25,7 +25,6 @@ section {
   font-family: 'Poppins', sans-serif;
   background-image: url('./images/desktop-background.svg');
   background-repeat: no-repeat;
-  background-position: 100px right;
   background-size: calc(100%);
   border-radius: 0 0 0 6rem;
   padding-bottom: 50px;
@@ -41,7 +40,6 @@ hr {
   margin-top: -10px;
   margin-left: -50px;
   width: 320px;
-  box-shadow: #dfe1e6;
 }
 
 header {
@@ -226,14 +224,6 @@ header {
   color: #344563;
   margin-left: 20px;
   margin-right: 5px;
-}
-.popup {
-  background-color: rgb(255, 255, 255);
-  top: 0;
-  left: 0;
-  position: absolute;
-  height: 80vh;
-  width: 80vw;
 }
 
 .languages {
@@ -493,6 +483,7 @@ header {
   color: orange;
   background-color: #396df2;
 }
+
 .backdrop {
   position: fixed;
   background: #c1c7d090;
@@ -503,11 +494,13 @@ header {
   width: 100vw;
   height: 100vh;
 }
+
 .project-image {
   width: 100%;
   max-height: 30rem;
   object-fit: cover;
 }
+
 .popup-data {
   display: flex;
   align-items: center;
@@ -527,6 +520,7 @@ header {
   border-radius: 10px;
   border: 8px solid #ebebff;
 }
+
 .ul-list {
   display: flex;
   gap: 5rem;
@@ -555,10 +549,10 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .popup .btn > img {
   margin-left: 0.5rem;
 }
-
 
 @media (min-width: 748px) {
   .button-container {
