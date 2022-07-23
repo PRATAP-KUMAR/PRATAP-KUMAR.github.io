@@ -776,3 +776,7 @@ header {
 .mobile-menu.visible {
   display: block;
 }
+
+.alert {
+background-color: red;
+}
