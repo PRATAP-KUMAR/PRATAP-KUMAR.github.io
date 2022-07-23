@@ -1,84 +1,109 @@
-// popup window work starts from here
+const Popup = (project) => {
+  // Backdrop
+  const backdrop = document.createElement('div');
+  backdrop.className = 'backdrop';
+  document.body.appendChild(backdrop);
 
-import jobTags from './job-tags.js';
-import techTags from './tech-tags.js';
+  // Popup
+  const popup = document.createElement('div');
+  popup.className = 'popup';
+  backdrop.appendChild(popup);
 
-const openModal = (project) => {
-  const projects = document.createElement('div');
-  projects.className = 'popup';
-
-  const articlePopup = document.createElement('article');
-  articlePopup.className = 'article';
-
-  const divPopup = document.createElement('div');
-  divPopup.className = 'popup-div';
-  articlePopup.append(divPopup);
-
-  const h2 = document.createElement('h2');
-  h2.innerText = project.name;
-  divPopup.append(h2);
-
-  divPopup.append(jobTags(project.jobDetails));
-
-  const img = document.createElement('img');
-  img.className = 'image';
-  img.setAttribute('src', project.featuredImage, 'Project');
-  divPopup.appendChild(img);
-
-  const divContainer = document.createElement('div');
-  divContainer.className = 'red-blue-green';
-  divPopup.appendChild(divContainer);
-
-  const divContainer2 = document.createElement('div');
-  divContainer2.className = 'red';
-  divContainer.appendChild(divContainer2);
-
-  const paragrah = document.createElement('p');
-  paragrah.innerText = project.description;
-  divContainer2.append(paragrah);
-
-  const divContainer3 = document.createElement('div');
-  divContainer3.className = 'blue-green';
-  divContainer.appendChild(divContainer3);
-
-  const divContainer4 = document.createElement('div');
-  divContainer4.className = 'blue';
-  divContainer3.append(divContainer4);
-
-  divContainer4.appendChild(techTags(project.technologies));
-
-  const divContainer5 = document.createElement('div');
-  divContainer5.className = 'green';
-  divContainer3.append(divContainer5);
-
-  const buttonSeeLive = document.createElement('button');
-  buttonSeeLive.className = 'button-popup';
-  buttonSeeLive.innerHTML = 'See Live';
-  divContainer5.append(buttonSeeLive);
-
-  const buttonSeeSource = document.createElement('button');
-  buttonSeeSource.className = 'button-popup';
-  buttonSeeSource.innerHTML = 'See Source';
-  divContainer5.append(buttonSeeSource);
-
-  const buttonImages = document.createElement('div');
-  buttonImages.className = 'twoButtons';
-
-  //
-  projects.appendChild(articlePopup);
-  document.body.appendChild(projects);
-  //
-
-  const closebtn = document.createElement('a');
-  closebtn.className = 'close-icon ';
-
-  closebtn.innerText = 'X';
-
-  projects.appendChild(closebtn);
-
-  closebtn.addEventListener('click', () => {
-    projects.remove();
+  // Close button
+  const exit = document.createElement('a');
+  exit.addEventListener('click', () => {
+    backdrop.remove();
   });
+  popup.appendChild(exit);
+  exit.innerHTML = '<img src="./images/close.svg">';
+  exit.classList.add('closing');
+
+  // Project title
+  const h1 = document.createElement('h1');
+  h1.innerText = project.name;
+  h1.classList.add('project-name');
+  popup.appendChild(h1);
+
+  // Project data
+  const div = document.createElement('div');
+  div.classList.add('popup-data');
+  popup.appendChild(div);
+  const h4 = document.createElement('h4');
+  h4.className = 'project-client';
+  h4.innerText = project.client;
+  div.appendChild(h4);
+  const img2 = document.createElement('img');
+  img2.className = 'counter';
+  img2.setAttribute('src', './images/dot.png');
+  div.appendChild(img2);
+  const span = document.createElement('span');
+  span.className = 'programming-language';
+  span.innerText = 'Back End Dev';
+  div.appendChild(span);
+  const img3 = document.createElement('img');
+  img3.className = 'counter';
+  img3.setAttribute('src', './images/dot.png');
+  div.appendChild(img3);
+  const span2 = document.createElement('span');
+  span2.className = 'year';
+  span2.innerText = project.year;
+  div.appendChild(span2);
+
+  // Project image
+  const div2 = document.createElement('div');
+  div2.classList.add('popup-image');
+  popup.appendChild(div2);
+  const img = document.createElement('img');
+  img.className = 'project-image';
+  img.setAttribute('src', project.img);
+  div2.appendChild(img);
+
+  // Card body
+  const cardBody = document.createElement('div');
+  cardBody.classList.add('popup-flex');
+  popup.appendChild(cardBody);
+
+  // Project description
+  const p = document.createElement('p');
+  p.classList.add('popup-paragraph');
+  p.innerText = project.description;
+  cardBody.appendChild(p);
+
+  // Bottons
+  const buttonContainer = document.createElement('div');
+  buttonContainer.className = 'button-container';
+  cardBody.appendChild(buttonContainer);
+
+  // Project tags
+  const ul = document.createElement('ul');
+  ul.classList.add('languages');
+  buttonContainer.appendChild(ul);
+  project.technologies.forEach((technology) => {
+    const li = document.createElement('li');
+    li.innerText = technology;
+    ul.appendChild(li);
+  });
+
+  const button = document.createElement('button');
+  button.classList.add('btn');
+  button.innerText = 'See Live';
+  button.addEventListener('click', () => {
+  });
+
+  const icon = document.createElement('img');
+  icon.setAttribute('src', './images/arrow-circle.png');
+  button.append(icon);
+  buttonContainer.appendChild(button);
+
+  const button2 = document.createElement('button');
+  button2.classList.add('btn');
+  button2.innerText = 'See Source';
+  button2.addEventListener('click', () => {
+  });
+  const icon2 = document.createElement('img');
+  icon2.setAttribute('src', './images/github.svg');
+  button2.append(icon2);
+  buttonContainer.appendChild(button2);
 };
 
-export default openModal;
+export default Popup;
