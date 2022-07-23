@@ -1,36 +1,16 @@
-const qs = function querySelector(selector = '*', element = document) {
-  return element.querySelector(selector);
-};
+const menuNavigation = document.querySelector('.nav-right');
+const closingButton = document.querySelector('.closing-icon');
 
-const hamburger = qs('#hamburger');
-const closeIcon = qs('#close-icon');
-const container = qs('nav.nav ul');
-
-const toggleBurger = function toggleBurger() {
-  hamburger.classList.toggle('no-display');
-  closeIcon.classList.toggle('no-display');
-  container.classList.toggle('enlarge');
-};
-
-hamburger.addEventListener('click', () => {
-  toggleBurger();
+menuNavigation.addEventListener('click', () => {
+  document.querySelector('.mobile-menu').classList.add('visible');
 });
 
-closeIcon.addEventListener('click', () => {
-  toggleBurger();
+closingButton.addEventListener('click', () => {
+  document.querySelector('.mobile-menu').classList.remove('visible');
 });
 
-container.addEventListener('click', (e) => {
-  const { target } = e;
-
-  if (target.tagName.toLowerCase() !== 'a') return;
-
-  toggleBurger();
-  qs(target.getAttribute('href')).scrollIntoView();
+document.querySelectorAll('.nav-link').forEach((li) => {
+  li.addEventListener('click', () => {
+    document.querySelector('.mobile-menu').classList.remove('visible');
+  });
 });
-
-window.onresize = () => {
-  if (window.innerWidth >= 768 && container.classList.contains('enlarge')) {
-    toggleBurger();
-  }
-};
