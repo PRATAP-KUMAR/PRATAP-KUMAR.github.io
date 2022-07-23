@@ -1,20 +1,10 @@
-const form = document.querySelector('#contact-form');
-const EMAIL_CASE_SENSITIVITY_CHECK = 'Please enter the letters in your email as lower case';
+document.querySelector('.submit').addEventListener('click', (event) => {
+  const mail = document.getElementById('email').value;
+  const errorMail = document.querySelector('.error');
+  const makeItLowerCase = (str) => str === str.toLowerCase();
 
-const { email, button } = form.elements;
-
-const errorMessage = document.createElement('p');
-errorMessage.textAlign = 'left';
-errorMessage.color = '#ff0000';
-errorMessage.fontSize = '32px';
-button.insertAdjacentElement('beforebegin', errorMessage);
-
-form.addEventListener('submit', (event) => {
-  event.preventDefault();
-
-  if (email.value !== email.toLocaleLowerCase()) {
-    errorMessage.innerText = EMAIL_CASE_SENSITIVITY_CHECK;
-  } else {
-    form.submit();
+  if (!makeItLowerCase(mail)) {
+    event.preventDefault();
+    errorMail.textContent = 'Please use lowercase for email';
   }
 });
