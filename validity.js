@@ -1,22 +1,14 @@
-const form = document.querySelector('form');
-
-const { email, button } = form.elements;
-
-const errSpan = document.createElement('p');
-errSpan.style.textAlign = 'left';
-errSpan.style.color = 'red';
-errSpan.style.fontSize = '1rem';
-button.insertAdjacentElement('beforebegin', errSpan);
-
-const invalidMessage = '';
-
+const form = document.forms["contactForm"];
+const button = form["button"];
+const errorMessageElement = document.createElement('a');
+errorMessageElement.style.textAlign = 'center';
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  if (email.value !== email.value.toLowerCase()) {
-    invalidMessage.textContent = 'please type your whole email address in lowercase';
-  } else {
-    invalidMessage.textContent = '';
+  if (form['email'].value === form['email'].value.toLowerCase()) {
     form.submit();
+  } else {
+    alert("Please write email letters in small case")
   }
-});
+}
+)

@@ -192,11 +192,11 @@
         to help with it
       </p>
     </div>
-    <form id="contact-form-validation" class="contact-box" action="https://formspree.io/f/mzbolelw" method="POST">
+    <form name = 'contactForm' id="contact-form-validation" class="contact-box" action="https://formspree.io/f/mzbolelw" method="POST">
       <input type="text" name="full-name" placeholder="Your Name" id="contact-name" maxlength="30" required>
-      <input type="email" placeholder="username@email.com" name="email" id="email" required>
+      <input name='email' type="email" id="email" required>
       <textarea id="message" name="Message" maxlength="500" placeholder="Write your message here" required></textarea>
-      <button type="submit" class="btn btn-width">Get In Touch</button>
+      <button name = "button" type="submit" class="btn btn-width">Get In Touch</button>
     </form>
   </section>
   <!-- contact me section end -->
