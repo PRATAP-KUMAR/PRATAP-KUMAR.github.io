@@ -1,7 +1,6 @@
 # My Portfolio
 
 This is my Portfolio.  
-In this branch, contact form validation is done by using javascript.
 
 
 ## Built With
